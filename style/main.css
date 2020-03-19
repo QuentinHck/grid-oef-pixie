@@ -1,3 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+
+.logo{
+    background-image: url(../images/header-logo.png);
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav{
+    height: 100px;
+}
+
+nav .logo{
+    height: 50px;
+    width: 125px;
+    position: absolute;
+    top: 25px;
+}
+
+nav .hamburger-menu{
+    width: 50px;
+    height: 50px;
+    background-color: #3A8BCD;
+    position: absolute;
+    right: 0;
+    top: 25px;
+    border-radius: 5px;
+}
+
+nav .hamburger-menu .horizontals{
+    width: 20px;
+    height: 15px;
+    margin: auto;
+    margin-top:18px;
+}
+
+nav .hamburger-menu span{
+    width: 20px;
+    height: 3px;
+    margin-top: 3px;
+    display: block;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+div.underline{
+    width: 30px;
+    height: 5px;
+    background-color: #3A8BCD;
+}
+
+h1{
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+    margin-top: 0.7em;
+}
+h2{
+    font-size: 1rem;
+    margin: 0.8em 0;
+}
+
+p{
+    font-weight: 200;
+    margin: 1em 0;
+    line-height: 1.5em;
+}
+
+button{
+    text-transform: uppercase;
+    background-color: #3A8BCD;
+    color: white;
+    border: none;
+    padding: 1em;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 100;
+    margin-top: 1em;
+}
+
+section.subscribe{
+    padding: 4rem 0;
+    background-color: #3A8BCD;
+    color: white;
+    text-align: center;
+}
+
+section.subscribe .underline{
+    background-color: #fff;
+    margin:auto;
+}
+
+section.subscribe input, section.subscribe button{
+    width: 100%;
+    padding: 0.8em;
+    font-size: 1.2rem;
+}
+
+section.subscribe input{
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: #3A8BCD;
+    color: white;
+    font-weight: 200;
+}
+
+section.subscribe input::placeholder{
+    color: white;
+}
+
+section.subscribe button{
+    background-color: #fff;
+    color: #3A8BCD;
+    font-weight: 100;
 }

@@ -1,0 +1,75 @@
+header{
+    height: 600px;
+    background-image: url(../images/banner-bg.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+header section{
+    background-color: rgba(255,255,255,0.9);
+    padding: 2em;
+}
+header h1{
+    margin-top: 0;
+}
+
+section.items{
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.items h1{
+    margin-top: 0.7em;
+}
+
+article{
+    margin-top: 2em;
+    padding: 1em;
+    border: solid 1px #efe7e4;
+}
+
+article .slider-items{
+    height: 370px;
+    width: 100%;
+    overflow: hidden;
+}
+
+article .slider-items .items{
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+article .slider-items .item1{
+    background-image: url(../images/big-02.jpg);
+}
+
+article p.price{
+    font-weight: 500;
+    color: #3A8BCD;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.buttons-slider{
+    display: flex;
+    margin-top: 3rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.buttons-slider span{
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: darkgrey;
+    margin: 0 4px;
+    align-self: center;
+}
+
+.buttons-slider span:first-child{
+    background-color: #3A8BCD;
+}
