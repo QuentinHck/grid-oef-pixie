@@ -1,5 +1,5 @@
 header{
-    height: 600px;
+    height: 550px;
     background-image: url(../images/banner-bg.jpg);
     object-fit: cover;
     background-size: cover;
@@ -7,12 +7,18 @@ header{
     background-repeat: no-repeat;
     display: flex;
 }
-header section{
+
+header article{
     background-color: rgba(255,255,255,0.9);
     padding: 2em;
 }
 header h1{
     margin-top: 0;
+}
+
+
+.grid-item{
+    grid-column: 1 / 13;
 }
 
 section.items{
@@ -24,35 +30,11 @@ section.items{
     margin-top: 0.7em;
 }
 
-article{
-    margin-top: 2em;
-    padding: 1em;
-    border: solid 1px #efe7e4;
+.slider-item2, .slider-item3, .slider-item4{
+    display: none;
 }
 
-article .slider-items{
-    height: 370px;
-    width: 100%;
-    overflow: hidden;
-}
 
-article .slider-items .items{
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-article .slider-items .item1{
-    background-image: url(../images/big-02.jpg);
-}
-
-article p.price{
-    font-weight: 500;
-    color: #3A8BCD;
-    margin-top: 0;
-    margin-bottom: 0;
-}
 
 .buttons-slider{
     display: flex;
@@ -72,4 +54,62 @@ article p.price{
 
 .buttons-slider span:first-child{
     background-color: #3A8BCD;
+}
+
+@media screen and (min-width:450px){
+    header {
+        justify-content: flex-start;
+    }
+
+    header article{
+       width: 70%;
+    }
+
+    .slider-container{
+        display: grid;
+        grid-column: repeat(2, 1fr);
+        column-gap: 1em;
+    }
+
+    .slider-item1{
+        grid-column: 1/ 2;
+    }
+
+    .slider-item2{
+        grid-column: 2/3;
+        display: block;
+    }
+
+}
+
+@media screen and (min-width:900px){
+    header article{
+        width: 400px;
+    }
+
+    .slider-container{
+        display: grid;
+        grid-column: repeat(4, 1fr);
+        column-gap: 1em;
+    }
+
+    .slider-item1{
+        grid-column: 1/ 2;
+    }
+
+    .slider-item2{
+        grid-column: 2/3;
+        display: block;
+    }
+
+    .slider-item3{
+        grid-column: 3/4;
+        display: block;
+    }
+
+    .slider-item4{
+        grid-column: 4/5;
+        display: block;
+    }
+
 }
