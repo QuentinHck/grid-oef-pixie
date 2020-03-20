@@ -19,20 +19,17 @@ body {
     object-fit: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-nav{
-    height: 100px;
-}
-
-nav .logo{
     height: 50px;
     width: 125px;
     position: absolute;
     top: 25px;
 }
 
-nav .hamburger-menu{
+nav{
+    height: 100px;
+}
+
+.nav-hamburger{
     width: 50px;
     height: 50px;
     background-color: #3A8BCD;
@@ -42,14 +39,14 @@ nav .hamburger-menu{
     border-radius: 5px;
 }
 
-nav .hamburger-menu .horizontals{
+.nav-hamburger .horizontals{
     width: 20px;
     height: 15px;
     margin: auto;
     margin-top:18px;
 }
 
-nav .hamburger-menu span{
+.nav-hamburger span{
     width: 20px;
     height: 3px;
     margin-top: 3px;
@@ -126,4 +123,50 @@ section.subscribe button{
     background-color: #fff;
     color: #3A8BCD;
     font-weight: 100;
+}
+
+footer{
+    padding: 3em 0;
+}
+
+footer .logo{
+    position: relative;
+    margin: auto;
+    top: 0;
+}
+
+.footer-nav div{
+    padding: 0;
+    margin: 2em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.footer-nav a{
+    color: darkgrey;
+    text-decoration: none;
+    padding:  0.7em;
+    align-self: center;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 100;
+}
+
+.footer-nav .footer-icon{
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+}
+
+.footer-icon .icon{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 100%;
+    color: white;
+    background-color: darkgrey;
+    display: flex;
+    justify-content: center;
 }
