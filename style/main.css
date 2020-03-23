@@ -83,6 +83,10 @@ h1{
     margin-bottom: 0.5em;
     margin-top: 0.7em;
 }
+
+h1.grid-item{
+    margin-bottom: 1em;
+}
 h2{
     font-size: 1rem;
     margin: 0.8em 0;
@@ -101,9 +105,12 @@ button{
     border: none;
     padding: 1em;
     border-radius: 5px;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 100;
     margin-top: 1em;
+}
+input{
+    font-size: 1rem;
 }
 
 section{
@@ -117,6 +124,38 @@ section{
 
 .grid-item{
     grid-column: 1 / 13;
+}
+
+.content-image-Twocolumns{
+    grid-column: 1/13;
+}
+
+.content-image-Twocolumns img {
+    width: 100%;
+}
+
+.content-text-Twocolumns{
+    grid-column: 1/13;
+}
+
+.content-text-icons{
+    width: 100%;
+    border-top: 1px solid #efe7e4;
+    padding: 1em 0;
+}
+
+.content-text-icons .icon, .content-text-icons p{ 
+    float: left;
+}
+
+.content-text-icons p{ 
+    margin: 0;
+    margin-right:1em ;
+    line-height: 40px;
+}
+
+.content-text-icons .icon{ 
+    margin: 0 0.2em;
 }
 
 .items h1{
@@ -141,6 +180,27 @@ section{
     margin-bottom: 0;
 }
 
+form input{
+    border: 1px solid #efe7e4;
+    font-weight: 100;
+    padding: 1em;
+    font-size: 1rem;
+    width: 100%;
+    margin: 1em 0;
+}
+
+form input[type=text-area]{
+    height: auto;
+}
+
+form input:first-child{
+    margin-top: 2em;
+}
+
+form button{
+    margin-bottom: 2em;
+}
+
 section.subscribe{
     background-color: #3A8BCD;
     color: white;
@@ -155,7 +215,7 @@ section.subscribe .underline{
 section.subscribe input, section.subscribe button{
     width: 100%;
     padding: 0.8em;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 section.subscribe input{
@@ -211,7 +271,7 @@ footer .logo{
     margin: auto;
 }
 
-.footer-icon .icon{
+.icon{
     width: 40px;
     height: 40px;
     line-height: 40px;

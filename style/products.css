@@ -55,7 +55,7 @@
     .submenu{
         display: inline-block;
         width: auto;
-        float: right;
+        float: left;
     }
     .grid-container{
         width: 100%;
@@ -75,3 +75,8 @@
     } 
 }
 
+@media screen and (min-width:665px){
+    .submenu{
+        float: right;
+    }
+}
