@@ -180,7 +180,7 @@ section{
     margin-bottom: 0;
 }
 
-form input{
+form input, form textarea{
     border: 1px solid #efe7e4;
     font-weight: 100;
     padding: 1em;
@@ -189,9 +189,6 @@ form input{
     margin: 1em 0;
 }
 
-form input[type=text-area]{
-    height: auto;
-}
 
 form input:first-child{
     margin-top: 2em;
@@ -306,7 +303,15 @@ footer .logo{
 }
 
 @media screen and (min-width:900px){
-
+    .content-image-Twocolumns{
+        grid-column: 1/7;
+    }
+    .content-text-Twocolumns{
+        grid-column: 7/13;
+    }
+    .grid-container{
+        column-gap: 2em;
+    }
     .container{
         width: 900px;
     }
@@ -337,6 +342,7 @@ footer .logo{
 
     nav .navigation{
         display: block;
+        position: sticky;
     }
 
     nav .navigation a{
@@ -362,5 +368,11 @@ footer .logo{
 
     .subscribe .container{
         width: 650px;
+    }
+}
+
+@media screen and (min-width:1800px){
+    .container{
+        width: 1100px;
     }
 }
