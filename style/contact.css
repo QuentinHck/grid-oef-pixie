@@ -1,3 +1,18 @@
+input:hover,textarea:hover{
+    border-color: #3A8BCD;
+    color:#3A8BCD ;
+    transition: all 0.2s;
+}
+button{
+    border: solid 1px white;
+}
+button:hover{
+    border: solid 1px #3A8BCD;
+    background: #fff;
+    color:#3A8BCD ;
+    transition: all 0.2s;
+}
+
 @media screen and (min-width:450px){
     form input:first-child{
         margin-top: 0;

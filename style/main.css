@@ -9,6 +9,37 @@ a{
     font-weight: 400;
 }
 
+a:hover{
+    color: rgb(142, 190, 230);
+    transition: color 0.2s;
+}
+
+a.btn, button{
+    text-transform: uppercase;
+    background-color: #3A8BCD;
+    color: white;
+    border: none;
+    padding: 1em;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 100;
+    margin-top: 1em;
+}
+
+a.btn{
+    width: max-content;
+    display: block;
+}
+
+.btn:hover{
+    color: #3A8BCD;
+    border: 1px solid #3A8BCD;;
+    background-color: white;
+    transition: all 0.2s;
+}
+
+
+
 .darkgrey{
     color: darkgrey;
 }
@@ -118,17 +149,6 @@ p{
     line-height: 1.5em;
 }
 
-button{
-    text-transform: uppercase;
-    background-color: #3A8BCD;
-    color: white;
-    border: none;
-    padding: 1em;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: 100;
-    margin-top: 1em;
-}
 
 input{
     font-size: 1rem;
@@ -169,7 +189,12 @@ section{
     align-self: center;
 }
 
-.buttons-slider span:first-child{
+.buttons-slider span:hover{
+    background-color: #3A8BCD;
+    cursor: pointer;
+}
+
+.buttons-slider .active{
     background-color: #3A8BCD;
 }
 
@@ -218,6 +243,15 @@ section{
     margin-top: 2em;
     padding: 1em;
     border: solid 1px #efe7e4;
+}
+
+.shop-item:hover{
+    cursor: pointer;
+}
+
+.shop-item:hover img{
+    opacity: 0.4;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .shop-img-items img{
@@ -273,6 +307,18 @@ section.subscribe input, section.subscribe button{
     font-size: 1rem;
 }
 
+section.subscribe button{
+    border: solid 1px #3A8BCD;
+}
+
+section.subscribe button:hover{
+    border: solid 1px white;
+    color: white;
+    background-color: #3A8BCD;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
 section.subscribe input{
     border-radius: 5px;
     border: 1px solid white;
@@ -320,6 +366,12 @@ footer .logo{
     font-weight: 100;
 }
 
+.footer-nav a:hover{
+    color: #3A8BCD ;
+    font-weight: 700;
+    transition: all 0.2s;
+}
+
 .footer-nav .footer-icon{
     justify-content: space-around;
     width: 60%;
@@ -335,6 +387,12 @@ footer .logo{
     background-color: darkgrey;
     display: flex;
     justify-content: center;
+}
+
+.icon:hover{
+    background-color: #3A8BCD ;
+    cursor: pointer;
+    transition: 0.2s all;
 }
 
 @media screen and (min-width:450px){
