@@ -25,31 +25,11 @@ section.items{
     margin-top: 0.7em;
 }
 
-.slider-item2, .slider-item3, .slider-item4{
-    display: none;
-}
 
 
 
-.buttons-slider{
-    display: flex;
-    margin-top: 3rem;
-    width: 100%;
-    justify-content: center;
-}
 
-.buttons-slider span{
-    display: block;
-    width: 8px;
-    height: 8px;
-    background-color: darkgrey;
-    margin: 0 4px;
-    align-self: center;
-}
 
-.buttons-slider span:first-child{
-    background-color: #3A8BCD;
-}
 
 @media screen and (min-width:450px){
     header {
@@ -60,20 +40,6 @@ section.items{
        width: 70%;
     }
 
-    .slider-container{
-        display: grid;
-        grid-column: repeat(2, 1fr);
-        column-gap: 1em;
-    }
-
-    .slider-item1{
-        grid-column: 1/ 2;
-    }
-
-    .slider-item2{
-        grid-column: 2/3;
-        display: block;
-    }
 
 }
 
@@ -81,30 +47,4 @@ section.items{
     header article{
         width: 400px;
     }
-
-    .slider-container{
-        display: grid;
-        grid-column: repeat(4, 1fr);
-        column-gap: 1em;
-    }
-
-    .slider-item1{
-        grid-column: 1/ 2;
-    }
-
-    .slider-item2{
-        grid-column: 2/3;
-        display: block;
-    }
-
-    .slider-item3{
-        grid-column: 3/4;
-        display: block;
-    }
-
-    .slider-item4{
-        grid-column: 4/5;
-        display: block;
-    }
-
 }

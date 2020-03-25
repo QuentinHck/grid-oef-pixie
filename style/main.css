@@ -9,6 +9,19 @@ a{
     font-weight: 400;
 }
 
+.darkgrey{
+    color: darkgrey;
+}
+
+.margin-left-right{
+    margin-left: 1em;
+    margin-right:1em
+}
+
+.margin-right{
+    margin-right: 1em;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -78,6 +91,13 @@ div.underline{
     background-color: #3A8BCD;
 }
 
+div.horizontal-underline{
+    width: 100%;
+    height: 1px;
+    background-color: #efe7e4;
+    margin: 1.5em 0;
+}
+
 h1{
     font-size: 1.5rem;
     margin-bottom: 0.5em;
@@ -109,8 +129,15 @@ button{
     font-weight: 100;
     margin-top: 1em;
 }
+
 input{
     font-size: 1rem;
+}
+ 
+input[type=number]{
+    width: 50px;
+    height: 50px;
+    padding: 0.3em;
 }
 
 section{
@@ -122,19 +149,43 @@ section{
     grid-template-columns: repeat(12 , 1fr);
 }
 
+.slider-item2, .slider-item3, .slider-item4{
+    display: none;
+}
+
+.buttons-slider{
+    display: flex;
+    margin-top: 3rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.buttons-slider span{
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: darkgrey;
+    margin: 0 4px;
+    align-self: center;
+}
+
+.buttons-slider span:first-child{
+    background-color: #3A8BCD;
+}
+
 .grid-item{
     grid-column: 1 / 13;
 }
 
-.content-image-Twocolumns{
+.content-TwoColumns-column1{
     grid-column: 1/13;
 }
 
-.content-image-Twocolumns img {
+.content-TwoColumns-column1 img {
     width: 100%;
 }
 
-.content-text-Twocolumns{
+.content-TwoColumns-column2{
     grid-column: 1/13;
 }
 
@@ -173,10 +224,17 @@ section{
     width: 100%;
 }
 
-.shop-item p.price{
+p.price{
     font-weight: 500;
     color: #3A8BCD;
     margin-top: 0;
+    margin-bottom: 0;
+}
+
+p.left-on-stock{
+    font-weight: 500;
+    color: #3A8BCD;
+    margin-top: 3em;
     margin-bottom: 0;
 }
 
@@ -283,6 +341,20 @@ footer .logo{
     .container{
         width: 80%;
     }
+    .slider-container{
+        display: grid;
+        grid-column: repeat(2, 1fr);
+        column-gap: 1em;
+    }
+
+    .slider-item1{
+        grid-column: 1/ 2;
+    }
+
+    .slider-item2{
+        grid-column: 2/3;
+        display: block;
+    }
     .subscribe .container{
         width: 450px;
     }
@@ -303,10 +375,10 @@ footer .logo{
 }
 
 @media screen and (min-width:900px){
-    .content-image-Twocolumns{
+    .content-TwoColumns-column1{
         grid-column: 1/7;
     }
-    .content-text-Twocolumns{
+    .content-TwoColumns-column2{
         grid-column: 7/13;
     }
     .grid-container{
@@ -364,6 +436,31 @@ footer .logo{
     
     nav .nav-hamburger{
          display: none;
+    }
+
+    .slider-container{
+        display: grid;
+        grid-column: repeat(4, 1fr);
+        column-gap: 1em;
+    }
+
+    .slider-item1{
+        grid-column: 1/ 2;
+    }
+
+    .slider-item2{
+        grid-column: 2/3;
+        display: block;
+    }
+
+    .slider-item3{
+        grid-column: 3/4;
+        display: block;
+    }
+
+    .slider-item4{
+        grid-column: 4/5;
+        display: block;
     }
 
     .subscribe .container{
